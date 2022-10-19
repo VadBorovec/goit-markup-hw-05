@@ -65,7 +65,16 @@
     <section class="hero overlay">
       <div class="container hero-container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button primary">Замовити послугу</button>
+        <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti omnis et in laboriosam cumque
+            dolorem accusantium odio mollitia ex!
+          </p>
+          <button type="button" data-modal-close>Закрити</button>
+        </div>
       </div>
     </section>
     <!-- Переваги -->
@@ -360,8 +369,6 @@
         </ul>
       </div>
     </section>
-
-
   </main>
   <!-- Підвал -->
   <footer class="page-footer">
@@ -424,6 +431,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
